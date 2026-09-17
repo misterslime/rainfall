@@ -9,3 +9,11 @@ Ensure that `SDL.dll` is located in the same directory as the .exe if running ou
 
 I used this tutorial to make it:
 https://solhsa.com/gp2/ch01.html
+
+
+
+To-Do:
+- Make this use a shader so its not horribly unoptimized.
+- Import the cloud as an image.
+- FBM random terrain shapes.
+- Trees?
