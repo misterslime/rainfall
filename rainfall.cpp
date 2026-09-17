@@ -1,3 +1,4 @@
+#include <windows.h>
 #include <string.h>
 #include <math.h>
 #include <stdlib.h>
@@ -277,6 +278,8 @@ void loop()
 
 int main(int argc, char** argv)
 {
+    SetConsoleTitle(L"rainfall");
+
     // setup SDL3
     // if it fails it quits
     if (!SDL_Init(SDL_INIT_VIDEO | SDL_INIT_EVENTS))
@@ -286,7 +289,7 @@ int main(int argc, char** argv)
 
     // setup frame buffer and stuff
     gFrameBuffer = new int[WINDOW_WIDTH * WINDOW_HEIGHT]; // Our framebuffer. Each integer in the array will represent one pixel on the screen.
-    gSDLWindow = SDL_CreateWindow("SDL3 window", WINDOW_WIDTH, WINDOW_HEIGHT, 0);
+    gSDLWindow = SDL_CreateWindow("Cool Rainfall Cellular Automata", WINDOW_WIDTH, WINDOW_HEIGHT, 0);
     gSDLRenderer = SDL_CreateRenderer(gSDLWindow, NULL);
     gSDLTexture = SDL_CreateTexture(gSDLRenderer, SDL_PIXELFORMAT_ABGR8888, SDL_TEXTUREACCESS_STREAMING, WINDOW_WIDTH, WINDOW_HEIGHT);
 
