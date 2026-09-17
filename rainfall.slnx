@@ -1,0 +1,7 @@
+<Solution>
+  <Configurations>
+    <Platform Name="x64" />
+    <Platform Name="x86" />
+  </Configurations>
+  <Project Path="rainfall.vcxproj" Id="e7da4a71-14eb-408d-ac2c-b72de1bf362f" />
+</Solution>
